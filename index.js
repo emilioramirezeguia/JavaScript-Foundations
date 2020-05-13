@@ -126,8 +126,11 @@ For example, variableInterestRate(200000, 0.04, 30) should console.log:
 "{Name}, with an interest rate of 0.06, your monthly rate is $1199"
 */
 
-function variableInterestRate(amount, interest, years) {
-  let name = "Emilio";
+function variableInterestRate() {
+  const name = prompt("What's your name?");
+  const amount = prompt("How much money do you want to borrow?");
+  let interest = prompt("At what interest rate?");
+  const years = prompt("For how many years?");
   interest = interest - 0.02;
 
   for (let i = 0; i < 9; i++) {
@@ -148,7 +151,7 @@ function variableInterestRate(amount, interest, years) {
   }
 }
 
-variableInterestRate(200000, 0.04, 30);
+variableInterestRate();
 
 // 🌟🌟🌟 STRETCH 🌟🌟🌟//
 
